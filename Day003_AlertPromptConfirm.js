@@ -8,7 +8,7 @@ alert(name1) // 사용자에게 알림창을 띄울 수 있다.
 const alpha = prompt("이름을 입력하세요.", "홍길동"); // 뒤의 "" 내의 인수는 디폴트값
 alert("환영합니다, "+alpha+"님.");
 alert(`안녕하세요, ${alpha}님.`); // 둘 다 사용 가능
-// alert에서 취소를 누를 경우 null값이 들어가게 된다.
+// prompt에서 취소를 누를 경우 null값이 들어가게 된다.
 
 const isStudent = confirm("당신은 학생인가요?");
 

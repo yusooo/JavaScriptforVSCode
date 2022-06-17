@@ -52,9 +52,19 @@ console.log(user1);
 console.log(user2);
 console.log(user3);
 
+
 // 전개 구문 Spread syntax : 배열
 let arr1 = [1, 2, 3];
 let arr2 = [4, 5, 6];
 let result = [0, ...arr1, ...arr2, 7, 8, 9];
 console.log(result); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-// arr.push() / arr.splice() / arr.concat() 등과 같이 사용 가능
+// arr.push() / arr.splice() / arr.concat() 등을 쉽게 가능
+
+// 전개 구문 Spread syntax : 복제
+let arr = [1, 2, 3];
+let arr3 = [...arr]; // [1, 2, 3]
+let user = {name : 'Mike', age : 30};
+let user0 = {...user};
+user0.name = "Tom";
+console.log(user.name); // "Mike"
+console.log(user0.name); // "Tom" ; user에는 영향 X
